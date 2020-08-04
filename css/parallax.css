@@ -1,0 +1,44 @@
+html {
+  /* Remove scroll bars from `html` */
+  overflow: hidden;
+}
+
+body {
+    
+  height: 100vh;
+  /* Add scroll bars to `body` */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Will make the scrolling performant on iOS devices */
+  -webkit-overflow-scrolling: touch;
+-webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax-group {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+.front {
+    position: absolute;
+    bottom: 0;
+}
+
+.forefront {
+  bottom: 60em;
+  position: relative;
+  z-index: 6;
+  /* Can sometimes help with forcing it to the front */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) ;
+}
+
+.logo{
+    top: 6em;
+    position: relative;
+    z-index: 4;
+}
+
+/*About circle settings*/
